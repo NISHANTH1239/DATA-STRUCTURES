@@ -1,0 +1,14 @@
+def sort(nums):
+    for i in range(5):
+        minpos=i
+    for j in range(i,6):
+        if nums[j]<nums[minpos]:
+            minpos=j
+    temp=nums[i]
+    nums[i]=nums[minpos]
+    nums[minpos]=temp
+nums=[18,7,97,17,54,2,100]
+nums.sort()
+print(nums)
+
+OUTPUT:[2, 7, 17, 18, 54, 97, 100]
